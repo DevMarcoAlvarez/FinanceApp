@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Especifica la version de modulos que se va a utilzar */
+    "module": "EsNext",
+
+    /* Especifica la version a la que se va a compilar */
+    "target": "EsNext",
+
+    /* Especifica el tipo de codificacion */
+    "charset": "UTF-8",
+
+    /* Especifica la carpeta de los archivos fuente */
+    "rootDir": "Src",
+
+    /* Especifica la carpeta de los archivos compilados */
+    "outDir": "Dist",
+
+    /* Especifica la si se trabajara con iteraciones de bajo nivel */
+    "downlevelIteration": true,
+
+    /* Especifica si se removeran los comentarios */
+    "removeComments": true,
+
+    /* Especifica si se creara un mapa de compilacion */
+    "sourceMap": true,
+
+    /* Permite utilizar import en modulos que no usan el export default */
+    "allowSyntheticDefaultImports": true
+  }
+}

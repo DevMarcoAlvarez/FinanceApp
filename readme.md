@@ -6,13 +6,13 @@ Creado por DevMarco y Selvin.
 
 - **Backend**
   - **DataBase**
-  - **Dist**
+  - **Dist (Solo para produccion)**
   - **Src**
     - *Index.ts*
   - *package.json*
   - *tsconfig.json*
 - **Frontend**
-  - **Dist**
+  - **Dist (Solo para produccion)**
   - **Src**
     - **Assets**
     - **Pages**

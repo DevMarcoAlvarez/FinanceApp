@@ -22,6 +22,9 @@
     "removeComments": true,
 
     /* Especifica si se creara un mapa de compilacion */
-    "sourceMap": true
+    "sourceMap": true,
+
+    /* Agregar autocompletado especial */
+    "typeRoots": ["./global.d.ts", "../global.d.ts"]
   }
 }

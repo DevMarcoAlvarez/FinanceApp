@@ -25,6 +25,9 @@
     "sourceMap": true,
 
     /* Permite utilizar import en modulos que no usan el export default */
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+
+    /* Agregar autocompletado especial */
+    "typeRoots": ["./global.d.ts", "../global.d.ts"]
   }
 }

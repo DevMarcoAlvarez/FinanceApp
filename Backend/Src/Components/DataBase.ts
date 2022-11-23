@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 /* Ubicacion de la base de datos */
 const DBDir = join(__dirname, "../../DataBase/user.json");
 
-export async function loadUsers(): Promise<User[]> {
+export async function loadUsers(): Promise<Record<string, User>> {
   try {
     await mkdir(dirname(DBDir));
   } catch {}
@@ -23,15 +23,15 @@ export async function loadUsers(): Promise<User[]> {
   } catch {
     console.log("Creando base de datos");
 
-    await writeFile(DBDir, "[]", {
+    await writeFile(DBDir, "{}", {
       encoding: "utf-8",
     });
 
-    return [];
+    return {};
   }
 }
 
-export async function saveUsers(users: User[]): Promise<void> {
+export async function saveUsers(): Promise<void> {
   try {
     console.log("Usuario Agregado correctamente.");
 
@@ -40,3 +40,7 @@ export async function saveUsers(users: User[]): Promise<void> {
     });
   } catch {}
 }
+
+const users = await loadUsers();
+
+export default users;

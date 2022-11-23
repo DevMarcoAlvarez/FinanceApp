@@ -7,7 +7,10 @@ declare global {
   }
 
   interface User {
+    id: string;
+    balance: number;
     name: string;
+    password: string;
   }
 }
 

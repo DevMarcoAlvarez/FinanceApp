@@ -6,9 +6,6 @@
     /* Especifica la version a la que se va a compilar */
     "target": "EsNext",
 
-    /* Especifica el tipo de codificacion */
-    "charset": "UTF-8",
-
     /* Especifica la carpeta de los archivos fuente */
     "rootDir": "Src",
 
